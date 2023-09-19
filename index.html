@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>GALERIA</h1>
+    </header>
+    <main class="main">
+            <img src="./bird1.jpg" alt="pierwsze zdjecie" id="1" class="fotka">
+            <img src="./bird2.jpg" alt="drugie zdjecie" id="2"  class="fotka parzysta">
+            <img src="./bird3.jpg" alt="trzecie zdjecie" id="3" class="fotka">
+            <img src="./bird4.jpg" alt="czwarte zdjecie" id="4" class="fotka parzysta">
+            <img src="./bird5.jpg" alt="piate zdjecie" id="5" class="fotka">
+            <img src="./bird6.jpg" alt="szóste zdjecie" id="6" class="fotka parzysta">
+
+    </main>
+    <footer>
+        <h2>FOOTER</h2>
+    </footer>
+    <script>
+
+        const zdjecia = document.querySelectorAll('.fotka');
+
+        for (let i = 0; i < zdjecia.length; i++){
+            zdjecia[i].addEventListener('click', function() {
+            zdjecia[i].style.display = "none";
+        });
+        }
+
+
+
+    </script>
+
+</body>
+</html>

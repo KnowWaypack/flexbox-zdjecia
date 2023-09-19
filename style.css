@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 10vh;
+    background-color:blue;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+footer{
+    height: 10vh;
+    background-color:slateblue;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.main{
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+.fotka{
+    border-radius: 40px;
+}
+.parzysta{
+    scale: 150%;
+}
+
+.fotka:hover{
+    scale: 100%;
+    transform: scale(1.5);
+}
+
